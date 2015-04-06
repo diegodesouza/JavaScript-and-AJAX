@@ -52,6 +52,17 @@ body {
   height: 110px;
   overflow: hidden;
   border-bottom: 1px dotted #CCC;
+
+  -webkit-animation: myanimation 1s;
+  -moz-animation: myanimation 1s;
+  -o-animation: myanimation 1s;
+  animation: myanimation 1s;
+
+  -webkit-transition: height 0.3s ease-out;
+  -moz-transition: height 0.3s ease-out;
+  -o-transition: height 0.3s ease-out;
+  transition: height 0.3s ease-out;
+
 }
 
 #update li:hover {
@@ -80,5 +91,20 @@ body {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
+}
+
+@-webkit-keyframes myanimation {
+  0% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+
+@-moz-keyframes myanimation {
+  0% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes myanimation {
+ 0% { opacity: 0.3; }
+ 100% { opacity: 1.0; }
 }
 
